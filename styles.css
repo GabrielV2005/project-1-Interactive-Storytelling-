@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("images/threedoors.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+
+
+.door {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+.door-one {
+    left: 17%;
+    top: 15%;
+    width: 19%;
+    height: 70%;
+}
+
+.door-two {
+    left: 42%;
+    top: 15%;
+    width: 22%;
+    height: 70%;
+}
+
+
+.door-three {
+    left: 64%;
+    top: 15%;
+    width: 21%;
+    height: 70%;
+}
+
+.story-box {
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    width: 280px;
+    z-index: 20;
+}
+
+
+#story-button {
+    width: 100%;
+    padding: 15px;
+    background: rgba(20, 15, 30, 0.9);
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+#story-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    background: rgba(20, 15, 30, 0.9);
+    color: white;
+    padding: 0 20px;
+    border-radius: 0 0 10px 10px;
+
+    transition: max-height 0.6s ease, opacity 0.4s ease, padding 0.6s ease;
+}
+
+#story-content.open {
+    max-height: 400px;
+    opacity: 1;
+    padding: 20px;
+}
+
+#story-content h2 {
+    margin-top: 0;
+}
