@@ -1,0 +1,52 @@
+.zombie-img{
+    width: 250px;
+    height: auto;
+    animation-name: zombievibrate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes zombievibrate{
+    0%{
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(-3px, 2px);
+    }
+    50%{
+        transform: translate(3px, -2px);
+    }
+    75%{
+        transform: translate(-3px, -1px);
+    }
+    100%{
+        transform: translate(3px, 1px);
+    }   
+}
+
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  
+
+}
+h1{
+    color:#8B0000
+}
