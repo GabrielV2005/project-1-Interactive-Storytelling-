@@ -1,5 +1,5 @@
 .zombie-img{
-    width: 250px;
+    width: clamp(150px, 30vw, 300px);
     height: auto;
     animation-name: zombievibrate;
     animation-duration: 3s;
